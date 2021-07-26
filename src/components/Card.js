@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/card.css'
+import '../styles/card.css'
 
 const movies = [
     {
@@ -42,7 +42,6 @@ const movies = [
 ]
 
 const Card = (props) => {
-    console.log(props);
     return (
         <>
     <div className="card-container">

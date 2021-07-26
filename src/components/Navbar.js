@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
 
             <nav>
-                <h2>List of my fav netflix series and movies</h2>
+                <h2>Favourite Movies and Series</h2>
             </nav>
 
         </>

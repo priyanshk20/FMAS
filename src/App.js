@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Card from './Card'
+import Card from './components/Card'
 import './styles/index.css'
 
 const App = () => {

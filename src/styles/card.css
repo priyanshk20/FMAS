@@ -1,0 +1,56 @@
+.card-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+}
+.card{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 2rem 0.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    padding:1rem 1rem;
+}
+
+.card-img img{
+    width: 100%;
+    max-height: 200px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-info span{
+    font-size: 15px;
+}
+
+.watch-btn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 0.5rem;
+}
+
+button{
+    padding:0.5rem 1rem;
+    background-color:black;
+    border: 1px solid rgb(185, 1, 1);
+    border-radius: 50px;
+}
+
+.watch-btn a{
+    text-decoration:none;
+    color:white;
+}
+
+@media screen and (max-width:600px){
+    .card-container{
+        display:flex;
+        flex-direction: column;
+    }
+}

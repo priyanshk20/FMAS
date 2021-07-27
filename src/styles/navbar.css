@@ -1,5 +1,5 @@
 nav{
-    background:rgb(241, 241, 241);
+    background: #BB0A21;
     height: 10vh;
     width: 100%;
     text-align: center;
@@ -10,5 +10,6 @@ nav{
 
 nav h2{
     text-transform: capitalize;
-    color: rgb(185, 1, 1);
+    color: #E5ECE9;
+    font-family: 'Zen Tokyo Zoo', cursive;
 }

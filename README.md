@@ -1,9 +1,18 @@
 # FMAS
+
+NEW UI: WIP
+
+
+
+OLD UI:
+
 ![fmas](https://user-images.githubusercontent.com/52736997/127114504-63c57cad-3a71-4e20-99eb-e46d6e1b216a.PNG)
 
-## Favourite Movies And Series
+# Favourite Movies And Series
 
-### List of my favourite movies and series made with Reactjs.
+
+
+
 
 
 

@@ -1,17 +1,18 @@
 import React from 'react'
-import Banner from './components/Banner'
-import Movies from './components/Movies'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home'
 import Navbar from './components/Navbar'
-import Pagination from './components/Pagination'
+import Favourites from './pages/Favourites';
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Navbar/>
-      <Banner/>
-      <Movies/>
-      <Pagination/>
-    </>
+      <Routes>
+        <Route path="/" element={<Home/>}  />
+        <Route path="/favourites" element={<Favourites/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

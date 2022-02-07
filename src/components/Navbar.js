@@ -9,13 +9,13 @@ const Navbar = () => {
                 <img alt="Logo" src={Logo}></img>
                 <Link
                     to="/"
-                    className="text-orange-500 font-bold text-xl md:text-3xl"
+                    className="text-orange-500 font-bold text-md md:text-3xl"
                 >
                     Movies
                 </Link>
                 <Link
                     to="/favourites"
-                    className="text-orange-500 font-bold text-xl md:text-3xl"
+                    className="text-orange-500 font-bold text-md md:text-3xl"
                 >
                     Favourites
                 </Link>

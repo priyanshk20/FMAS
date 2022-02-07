@@ -1,18 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const Pagination = () => {
-    const [page, setPage] = useState(1)
-
-    const goAhead = () => {
-        setPage(page + 1)
-    }
-
-    const goBack = () => {
-        if (page > 1) {
-            setPage(page - 1)
-        }
-    }
-
+const Pagination = ({ page, goBack, goAhead }) => {
     return (
         <>
             <div className="w-full flex justify-center mb-8">

@@ -6,7 +6,6 @@ import { TailSpin } from 'react-loader-spinner'
 
 const Movies = () => {
     const [movies, setMovies] = useState([])
-
     const [page, setPage] = useState(1)
 
     const goAhead = () => {
@@ -25,7 +24,6 @@ const Movies = () => {
                 `https://api.themoviedb.org/3/trending/movie/week?api_key=c51ead54fa195e58d0023669954222a3&page=${page}`
             )
             .then((res) => {
-                console.table(res.data.results)
                 setMovies(res.data.results)
             })
     }, [page])
@@ -44,6 +42,7 @@ const Movies = () => {
                     <div className="flex flex-wrap justify-center">
                         {movies.map((movie) => (
                             <MovieCard
+                                movie={movie}
                                 key={movie.id}
                                 image={movie.backdrop_path}
                                 title={movie.title}

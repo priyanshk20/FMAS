@@ -17,20 +17,38 @@ function Movies() {
             setPage(page - 1)
         }
     }
-    useEffect(() => {
-        axios
-            .get(
-                `https://api.themoviedb.org/3/trending/movie/week?api_key=c51ead54fa195e58d0023669954222a3&page=${page}`
-            )
-            .then((res) => {
-                setMovies(res.data.results)
-            })
-    }, [page])
+    useEffect(
+        function () {
+            // everytime when page reloads
+            let oldFav = localStorage.getItem('imdb')
+            oldFav = JSON.parse(oldFav) || []
+            console.log(oldFav)
+            // setFavourites(oldFav);
+            // data manga
+            axios
+                .get(
+                    `https://api.themoviedb.org/3/trending/movie/week?api_key=5540e483a20e0b20354dabc2d66a31c9&page=${page}`
+                )
+                .then((res) => {
+                    console.table(res.data.results)
+                    setMovies(res.data.results)
+                })
+        },
+        [page]
+    )
 
     let add = (movie) => {
         let newArray = [...favourites, movie]
         setFavourites([...newArray])
-        console.log(newArray)
+        // console.log(newArray)
+        // after for reload
+        localStorage.setItem('imdb', JSON.stringify(newArray))
+    }
+
+    let del = (movie) => {
+        let newArray = favourites.filter((m) => m.id != movie.id)
+        setFavourites([...newArray])
+        localStorage.setItem('imdb', JSON.stringify(newArray))
     }
 
     return (
@@ -96,7 +114,7 @@ function Movies() {
                                     text-xl
                                     cursor-pointer
                                     "
-                                                onClick={() => add(movie)}
+                                                onClick={() => del(movie)}
                                             >
                                                 ❌
                                             </div>

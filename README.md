@@ -1,14 +1,10 @@
-# FMAS
-
-NEW UI: WIP
+# FMAS - Favourite Movies And Series
 
 
-
-OLD UI:
-
-![fmas](https://user-images.githubusercontent.com/52736997/127114504-63c57cad-3a71-4e20-99eb-e46d6e1b216a.PNG)
-
-# Favourite Movies And Series
+Home page:
+![image](https://user-images.githubusercontent.com/52736997/193730251-8227163a-f911-4f67-8af7-a75bd72cfcf9.png)
+Favourites page:
+![image](https://user-images.githubusercontent.com/52736997/193730324-5f9af68c-b268-4f01-961e-e7371d054360.png)
 
 
 
